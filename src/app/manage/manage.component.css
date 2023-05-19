@@ -1,0 +1,123 @@
+/* TODO: Adjust Fonts */
+body {
+    background-color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  ul {
+    vertical-align: middle;
+  }
+  
+  .partition {
+    border-bottom: 2px solid;
+    border-color: #bf1818;
+    width: 100px;
+    margin: auto;
+  }
+  
+  /* NAVBAR ONE */
+  .navbar {
+    background-color: #bf1818;
+  }
+  
+  .nav1 {
+    font-size: 1.2rem;
+    vertical-align: middle;
+  }
+
+  #nav-items {
+
+    margin-top: 100px;
+  }
+  
+  .cs-btn {
+    margin: 5% 3%;
+    width: 10rem;
+  }
+
+  .btn-admin {
+
+    width: 20rem;
+    margin-left: 100px;
+  }
+  
+  /* NAVBAR TWO */
+  .navbar-two {
+    margin: auto;
+  }
+  
+  .nav-categories {
+    padding: 5px 20px;
+  }
+  
+  
+  /* FEATURES */
+  #features {
+    padding: 0 7%;
+    line-height: 1.5;
+    background-color: white;
+    /* font-family: 'Roboto', sans-serif; */
+    position: relative;
+    text-align: center;
+  }
+  
+  .feature-box {
+    padding: 5%;
+  }
+  
+  .feature-title {
+    padding-top: 2%;
+  }
+  
+  .features-icons {
+    color: #ef8172;
+    margin: 1rem;
+  }
+  
+  .features-icons:hover {
+    color: #ff4c68;
+  }
+  
+  .feature-description {
+    font-size: 1rem;
+    color: #8f8f8f;
+    padding: 3% 8%;
+  }
+  
+  .mng {
+
+    font-size: medium;
+    border-color: black;
+  }
+
+  /* MENU (Heading - Space Grotesk) */
+  .home-headers {
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  .explore-our-menu {
+    text-align: center;
+    color: #bf1818;
+    font-weight: bolder;
+    padding-bottom: 5%;
+  }
+  
+  
+  /* BANNER */
+  /*#student-banner {
+    text-align: center;
+    margin-bottom: 50px;
+  }*/
+  
+  /* FOOTER */
+  #footer-div {
+    margin: auto;
+    background-color: #332E33;
+  }
+  
+  .footer-icons {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  

@@ -1,0 +1,82 @@
+<!-- NAVBAR ONE -->
+<div id="navbar-all">
+    <div id="navbar-one">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="padding: 0 10rem 10rem 10rem; height: 150px;">
+        <a class="navbar-brand" href="#"><img src="./assets/images/header-logo.gif" style="height: 145px;" alt="Slices&Bites"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav align-middle ml-auto">
+            <li class="nav-item active nav1">
+              <a class="nav-link" id="nav-items" routerLink="userpanel">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a style="margin-right: 20px; margin-left: 15px;" id="nav-items" routerLink="" onclick="return confirm('Are you sure want to logout?');"><button type="button" class="d-none d-sm-inline-block btn btn-dark btn-lg ml-lg-60 mr-40 mr-lg-0 order-2 order-lg-3 cs-btn"><i class="fa fa-sign-in"></i> Logout </button></a>
+           
+        </div>
+      </nav>
+    </div>
+</div>
+
+<div class="navbar-two">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 60px;">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item nav-categories">
+            <a class="nav-link" routerLink="userpanel"><img src="./assets/images/nav-pizza.png" alt="" style="width: 50px; height: 50px;">PIZZA</a>
+          </li>
+          <li class="nav-item nav-categories">
+            <a class="nav-link" routerLink="userpanel"><img src="./assets/images/nav-pasta.png" alt="" style="width: 50px; height: 50px;">PASTA</a>
+          </li>
+          <li class="nav-item nav-categories">
+            <a class="nav-link" routerLink="userpanel"><img src="./assets/images/nav-sides.png" alt="" style="width: 50px; height: 50px;">SIDES</a>
+          </li>
+          <li class="nav-item nav-categories">
+            <a class="nav-link" routerLink="userpanel"><img src="./assets/images/nav-drinks.png" alt="" style="width: 50px; height: 50px;">DRINKS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+
+    <!-- main container -->
+    <div class="container" id="container">
+        <!-- Signup container -->
+        <div class="sign-up-container">
+            
+          <br>
+          
+          <h1 style="text-align: center;">Update Product Details</h1>
+          <hr><br>
+          <form>
+            <label id="lbl">Product Id :</label>
+            <input type="userId" id="userId" placeholder="Product Id" name="userId" required>
+            <label id="lbl">Name :</label><input type="userId" id="userId" placeholder="Name" name="userId" required>
+            <label id="lbl">Decription :</label><input type="userId" id="userId" placeholder="Decription" name="userId" required>
+            <label id="lbl">Price :</label><input type="userId" id="userId" placeholder="Price" name="userId" required>
+            <label id="lbl">Product Category Id :</label><input type="userId" id="userId" placeholder="Category Id" name="userId" required>
+                
+        <br>
+
+        <button [disabled] type="submit" class="btn btn-default bn-fm"> Update </button>
+        <br><br>
+          </form>
+      
+          <br>
+          
+         
+    
+        </div>
+    
+        
+    
+
+    </div>
+   
+
+
+<app-footer></app-footer>

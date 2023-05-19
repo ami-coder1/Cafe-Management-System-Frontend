@@ -1,0 +1,15 @@
+#footer-div {
+  margin: auto;
+  background-color: #332E33;
+}
+
+.footer-icons {
+  color: white;
+}
+
+.partition {
+  border-bottom: 2px solid;
+  border-color: #bf1818;
+  width: 100px;
+  margin: auto;
+}

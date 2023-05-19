@@ -1,0 +1,80 @@
+<!-- div class="container">
+    <h2>Vertical (basic) form</h2>
+    <form #loginform="ngForm" (ngSubmit)="loginUser()">
+      <small class="text-danger">{{msg}}</small>
+      <div class="form-group">
+        <label for="userEmail">Email:</label>
+        <input type="userEmail" class="form-control" id="userEmail" placeholder="Enter email" name="userEmail" [(ngModel)]="user.userEmail" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" #userEmail="ngModel"
+        [class.is-invalid]="userEmail.invalid && userEmail.touched"
+        >
+        <small class="text-danger" [class.d-none]="userEmail.valid || userEmail.untouched">
+          Email Id is required field.
+        </small>
+      </div>
+      
+      <div class="form-group">
+        <label for="userPassword">Password:</label><br><br>
+        <input type="password" class="form-control" id="userPassword" placeholder="Enter password" name="userPassword" [(ngModel)]="user.userPassword" #userPassword="ngModel" 
+        [class.is-invalid]="userPassword.invalid && userPassword.touched"
+        >
+        <small class="text-danger" [class.d-none]="userPassword.valid || userPassword.untouched">
+          Password is required field.
+
+        </small>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Remember me</label>
+      </div>
+      <button [disabled]="loginform.form.invalid" routerLink="userpanel" type="submit" class="btn btn-info">Login</button>
+    </form -->
+    <!-- small (click)="gotregistration()"> New User ? Register Here</small>-->
+    <!-- small routerLink="register"> New User ? Register Here</small>
+  </div -->
+
+
+<body> 
+  <div class="container" id="container">
+
+     <!-- Sign in form-->
+	<div class="form-container sign-in-container">
+    <form #loginform="ngForm" (ngSubmit)="loginUser()">
+      <h1>Log In</h1>
+      <br>
+      <small class="text-danger" style="font-size: small;" >{{msg}}</small>
+      
+        <input type="userEmail" id="userEmail" placeholder="Email" name="userEmail" [(ngModel)]="user.userEmail" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" #userEmail="ngModel"
+        [class.is-invalid]="userEmail.invalid && userEmail.touched"
+        >
+        <small class="text-danger" [class.d-none]="userEmail.valid || userEmail.untouched">
+          Email Id is required field.
+        </small>
+      
+      
+      
+        <input type="password" id="userPassword" placeholder="Password" name="userPassword" [(ngModel)]="user.userPassword" #userPassword="ngModel" 
+        [class.is-invalid]="userPassword.invalid && userPassword.touched"
+        >
+        <small class="text-danger" [class.d-none]="userPassword.valid || userPassword.untouched">
+          Password is required field.
+
+        </small>
+        <br>
+      <!-- a href="#">Forgot Your Password</a -->
+      <button name="submit">Log In</button>
+    </form>
+  </div>
+  
+  <div class="overlay-container">
+  <div class="overlay">
+		<div class="overlay-panel overlay-right">
+			<h1>Welcome Back!</h1>
+			<p>Sign-in with us to Fill your tummy with our Tasty, Delicious food.</p>
+			<!-- button class="ghost" routerLink="register">Sign In</button -->
+		</div>
+    </div>
+
+  </div>
+
+  </div>
+</body>
+ 

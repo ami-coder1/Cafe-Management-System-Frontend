@@ -1,0 +1,93 @@
+<!-- NAVBAR ONE -->
+<div id="navbar-all">
+    <div id="navbar-one">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="padding: 0 10rem 10rem 10rem; height: 150px;">
+        <a class="navbar-brand" href="#"><img src="./assets/images/header-logo.gif" style="height: 145px;" alt="Slices&Bites"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav align-middle ml-auto">
+            <li class="nav-item active nav1">
+              <a class="nav-link" id="nav-items" routerLink="userpanel">Home <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+              <a style="margin-right: 20px; margin-left: 15px;" id="nav-items" routerLink="" onclick="return confirm('Are you sure want to logout?');"><button type="button" class="d-none d-sm-inline-block btn btn-dark btn-lg ml-lg-60 mr-40 mr-lg-0 order-2 order-lg-3 cs-btn"><i class="fa fa-sign-in"></i> Logout</button></a>
+        
+        </div>
+      </nav>
+    </div>
+</div>
+
+<div class="navbar-two">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 60px;">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item nav-categories">
+            <a class="nav-link" routerLink="userpanel"><img src="./assets/images/nav-pizza.png" alt="" style="width: 50px; height: 50px;">PIZZA</a>
+          </li>
+          <li class="nav-item nav-categories">
+            <a class="nav-link" routerLink="userpanel"><img src="./assets/images/nav-pasta.png" alt="" style="width: 50px; height: 50px;">PASTA</a>
+          </li>
+          <li class="nav-item nav-categories">
+            <a class="nav-link" routerLink="userpanel"><img src="./assets/images/nav-sides.png" alt="" style="width: 50px; height: 50px;">SIDES</a>
+          </li>
+          <li class="nav-item nav-categories">
+            <a class="nav-link" routerLink="userpanel"><img src="./assets/images/nav-drinks.png" alt="" style="width: 50px; height: 50px;">DRINKS</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <br>
+
+  <div style="margin-left: 560px;">
+    <a routerLink="manage">
+    <button type="button" class="d-none d-sm-inline-block btn btn-dark btn-lg ml-lg-60 mr-40 mr-lg-0 order-2 order-lg-3 btn-admin" style="color: white; background-color: #bf1818;">
+        Add Product </button></a>
+    </div>
+
+    <br><br>
+
+    <div class="container">
+        <div class="row justify-content-center">
+          
+          
+          <div class="table-responsive mt-2">
+            <table class="table table-bordered table-striped table-hover text-center mng">
+              <thead>
+                <tr>
+                  <td colspan="7" class="mng">
+                    <h3 class="text-center text-dark m-1">Manage Products</h3>
+                  </td>
+                </tr>
+                <tr>
+                    <th class="mng"> Product Id </th>
+                    <th class="mng"> Name </th>
+                    <th class="mng"> Price </th>
+                    <th class="mng"> Description </th>
+                    <th class="mng"> Category Id </th>
+                    <th class="mng"> Actions </th>
+                </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td class="mng">1</td>
+                <td class="mng">Margherita</td>
+                <td class="mng">99</td>
+                <td class="mng">loaded with cheese</td>
+                <td class="mng">1</td>
+                <td class="mng">
+                    <button type="button" class="d-none d-sm-inline-block btn btn-dark btn-lg ml-lg-60 mr-40 mr-lg-0 order-2 order-lg-3" style="color: white; background-color:#332E33;">
+                        Update </button> &nbsp;
+                    <button type="button" class="d-none d-sm-inline-block btn btn-dark btn-lg ml-lg-60 mr-40 mr-lg-0 order-2 order-lg-3" style="color: white; background-color: #bf1818;">
+                        Delete </button>
+                </td>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+  <app-footer></app-footer>

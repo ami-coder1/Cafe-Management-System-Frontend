@@ -1,0 +1,239 @@
+/* TODO: Adjust Fonts */
+body {
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+  vertical-align: middle;
+}
+
+.partition {
+  border-bottom: 2px solid;
+  border-color: #bf1818;
+  width: 100px;
+  margin: auto;
+}
+
+/* NAVBAR ONE */
+.navbar {
+  background-color: #bf1818;
+}
+
+.nav1 {
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+#nav-items {
+
+  margin-top: 100px;
+}
+
+.cs-btn {
+  margin: 5% 3%;
+  width: 10rem;
+}
+
+.btn-admin {
+
+  width: 20rem;
+  margin-left: 100px;
+}
+
+/* NAVBAR TWO */
+.navbar-two {
+  margin: auto;
+}
+
+.nav-categories {
+  padding: 5px 20px;
+}
+
+
+/* FEATURES */
+#features {
+  padding: 0 7%;
+  line-height: 1.5;
+  background-color: white;
+  /* font-family: 'Roboto', sans-serif; */
+  position: relative;
+  text-align: center;
+}
+
+.feature-box {
+  padding: 5%;
+}
+
+.feature-title {
+  padding-top: 2%;
+}
+
+.features-icons {
+  color: #ef8172;
+  margin: 1rem;
+}
+
+.features-icons:hover {
+  color: #ff4c68;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #8f8f8f;
+  padding: 3% 8%;
+}
+
+/* MENU (Heading - Space Grotesk) */
+.home-headers {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.explore-our-menu {
+  text-align: center;
+  color: #bf1818;
+  font-weight: bolder;
+  padding-bottom: 5%;
+}
+
+
+/* BANNER */
+/*#student-banner {
+  text-align: center;
+  margin-bottom: 50px;
+}*/
+
+/* FOOTER */
+#footer-div {
+  margin: auto;
+  background-color: #332E33;
+}
+
+.mng {
+
+  font-size: medium;
+  border-color: black;
+}
+
+.footer-icons {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	background-image: "./assets/images/pa1.jpg";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+h2 {
+	text-align: center;
+}
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+a {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+	margin: 15px 0;
+}
+/* Sigin signup buttons */
+.bn-fm {
+	border-radius: 20px;
+	border: 1px solid #da3d21;
+	background-color: #da3d21;
+	color: #e9e5e5;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+button:active {
+	transform: scale(0.95);
+}
+button:focus {
+	outline: none;
+}
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+form {
+	background-color: #f8f1f1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+input {
+	background-color: rgb(196, 192, 192);
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+	border-radius: 10px;
+}
+/* main container */
+.container {
+	background-color:  #f8f1f1;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 600px;
+	max-width: 100%;
+	min-height: 540px;
+}
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	transition: all 0.6s ease-in-out;
+}
+/* signin container */
+.sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+.container.right-panel-active .sign-in-container {
+	transform: translateX(100%);
+}
+/* signup container */
+.sign-up-container {
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+.container.right-panel-active .sign-up-container {
+	transform: translateX(100%);
+	opacity: 1;
+	z-index: 5;
+	animation: show 0.6s;
+}
+

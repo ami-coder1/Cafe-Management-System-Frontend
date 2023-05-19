@@ -1,0 +1,159 @@
+<!-- div class="container">
+    <h2>Registration</h2>
+    <form #loginform="ngForm" (ngSubmit)="registerUser()">
+        <small>{{msg}}</small>
+
+      <div class="form-group">
+       
+        <label for="userId">User Id:</label>
+        <input type="userId" class="form-control" id="userId" placeholder="Enter Id" name="userId" [(ngModel)]="user.userId" #userId="ngModel"
+        [class.is-invalid]="userId.invalid && userId.touched"
+        >
+        <small class="text-danger" [class.d-none]="userId.valid || userId.untouched">
+          User Id is required field.
+        </small>
+        </div>
+
+        <div class="form-group">
+        <label for="userName">User Name:</label>
+        <input type="userName" class="form-control" id="userName" placeholder="Enter Name" name="userName" [(ngModel)]="user.userName" #userName="ngModel"
+        [class.is-invalid]="userName.invalid && userName.touched"
+        >
+        <small class="text-danger" [class.d-none]="userName.valid || userName.untouched">
+          User Name is required field.
+        </small>
+    </div>
+
+    <div class="form-group">
+        <label for="userAddress">Address:</label>
+        <input type="userAddress" class="form-control" id="userAddress" placeholder="Enter Contact" name="userAddress" [(ngModel)]="user.userAddress" #userAddress="ngModel"
+        [class.is-invalid]="userAddress.invalid && userAddress.touched"
+        >
+        <small class="text-danger" [class.d-none]="userAddress.valid || userAddress.untouched">
+          User Contact is required field.
+        </small>
+      </div>
+
+      <div class="form-group">
+        <label for="userMobile">Contact No:</label>
+        <input type="userMobile" class="form-control" id="userMobile" placeholder="Enter Contact" name="userMobile" [(ngModel)]="user.userMobile" #userMobile="ngModel"
+        [class.is-invalid]="userMobile.invalid && userMobile.touched"
+        >
+        <small class="text-danger" [class.d-none]="userMobile.valid || userMobile.untouched">
+          User Contact is required field.
+        </small>
+        </div>
+        
+    <div class="form-group">
+        <label for="userEmail">Email:</label>
+        <input type="userEmail" class="form-control" id="userEmail" placeholder="Enter email" name="userEmail" [(ngModel)]="user.userEmail" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" #userEmail="ngModel"
+        [class.is-invalid]="userEmail.invalid && userEmail.touched"
+        >
+        <small class="text-danger" [class.d-none]="userEmail.valid || userEmail.untouched">
+          Email Id is required field.
+        </small>
+      </div>
+     
+      <div class="form-group">
+        <label for="userPassword">Password:</label><br><br>
+        <input type="userPassword" class="form-control" id="userPassword" placeholder="Enter password" name="userPassword" [(ngModel)]="user.userPassword" #userPassword="ngModel" 
+        [class.is-invalid]="userPassword.invalid && userPassword.touched"
+        >
+        <small class="text-danger" [class.d-none]="userPassword.valid || userPassword.untouched">
+          Password is required field.
+        </small>
+    </div>        
+
+      <div class="checkbox">
+        <label><input type="checkbox" name="remember"> Remember me</label>
+      </div>
+      <button [disabled]="loginform.form.invalid" routerLink="login" type="submit" class="btn btn-info">Login</button>
+    </form -->
+    <!-- small (click)="gotregistration()"> New User ? Register Here</small -->
+    <!-- small routerLink="login"> Existing User ? Login Here</small>
+
+  </div -->
+
+
+<body>
+
+<!-- main container -->
+<div class="container" id="container">
+	<!-- Signup container -->
+	<div class="form-container sign-up-container">
+		<form #loginform="ngForm" (ngSubmit)="registerUser()">
+      <small style="font-size: small;" >{{msg}}</small>
+
+      <h1>Create Account</h1>
+      <br>
+      <!-- input type="userId" id="userId" placeholder="User Id" name="userId" [(ngModel)]="user.userId" #userId="ngModel" required
+      [class.is-invalid]="userId.invalid && userId.touched"
+      >
+      <small class="text-danger" [class.d-none]="userId.valid || userId.untouched">
+        User Id is required field.
+      </small -->
+      
+      
+      <input type="text" id="userName" placeholder="Name" name="userName" [(ngModel)]="user.userName" #userName="ngModel" required pattern="[a-zA-Z][a-zA-Z ]+"
+      [class.is-invalid]="userName.invalid && userName.touched"
+      >
+      <small class="text-danger" style="font-size: small;" [class.d-none]="userName.valid || userName.untouched">
+        User Name is invalid.
+      </small>
+  
+    <input type="text" id="userAddress" placeholder="Address" name="userAddress" [(ngModel)]="user.userAddress" #userAddress="ngModel" required
+      [class.is-invalid]="userAddress.invalid && userAddress.touched"
+      >
+      <small class="text-danger" style="font-size: small;" [class.d-none]="userAddress.valid || userAddress.untouched">
+        Address is required field.
+      </small>
+   
+      <input type="text" id="userMobile" placeholder="Mobile number" name="userMobile" [(ngModel)]="user.userMobile" #userMobile="ngModel" required pattern="^((\\+91-?)|0)?[0-9]{10}$"
+      [class.is-invalid]="userMobile.invalid && userMobile.touched"
+      >
+      <small class="text-danger" style="font-size: small;" [class.d-none]="userMobile.valid || userMobile.untouched"> 
+        Contact field is invalid.
+      </small>
+      
+      <input type="text" id="userEmail" placeholder="Email" name="userEmail" [(ngModel)]="user.userEmail" required pattern="^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" #userEmail="ngModel"
+      [class.is-invalid]="userEmail.invalid && userEmail.touched"
+      >
+      <small class="text-danger" style="font-size: small;" [class.d-none]="userEmail.valid || userEmail.untouched">
+        Email Id is invalid.
+      </small>
+   
+   
+      <input type="password" id="userPassword" placeholder="Password" name="userPassword" [(ngModel)]="user.userPassword" #userPassword="ngModel" required
+      [class.is-invalid]="userPassword.invalid && userPassword.touched"
+      >
+      <small class="text-danger" style="font-size: small;" [class.d-none]="userPassword.valid || userPassword.untouched">
+        Password is invalid.
+      </small>
+  
+      <br>
+      
+    <button [disabled]="loginform.form.invalid" type="submit" class="btn btn-default" > Sign Up </button> <!-- (click)="registerUser()" -->
+  </form>
+
+	</div>
+
+	
+
+<!-- OVERLAY PANNELS  -->
+<div class="overlay-container">
+	
+	<div class="overlay">
+		<!-- Right PANNEL -->
+		<div class="overlay-panel overlay-right">
+			<h1>Hello, Friend!</h1>
+			<p>Enter your details and Eat the food you dream about at affordable prices.</p>
+			<!-- button class="ghost">Sign Up</button --> 
+		</div>
+	</div>
+</div>
+
+</div>
+</body>
+
+
+
